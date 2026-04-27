@@ -26,7 +26,8 @@ Backend:
 - D:\Spring\ttl-project\ecommerce-shop\.ai\instructions\docs-sync.instructions.md nếu thay đổi API, behavior, config, docs
 
 Shared progress:
-- D:\Spring\ttl-project\AI_PROGRESS.md
+- workspace root `AI_PROGRESS.md` (index/instructions)
+- workspace root `AI_PROGRESS/YYYY-MM-DD.md` (append detailed daily entries here)
 
 2. Trước khi sửa code
 - Tóm tắt lại yêu cầu thật ngắn
@@ -67,8 +68,10 @@ Shared progress:
 - Tóm tắt chính xác file nào đã đổi và vì sao
 
 6. Quy tắc log tiến trình bắt buộc
-Sau mỗi change set, append 1 entry mới vào:
-- D:\Spring\ttl-project\AI_PROGRESS.md
+Sau mỗi change set, append 1 entry mới vào file ngày hiện tại tại:
+- workspace root `AI_PROGRESS/YYYY-MM-DD.md`
+
+Chỉ dùng workspace root `AI_PROGRESS.md` làm file mục lục/hướng dẫn; không append lịch sử chi tiết vào đó.
 
 Mỗi entry phải có:
 - thời gian

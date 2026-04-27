@@ -18,6 +18,7 @@ If your task is implementation work, choose the correct project first and run co
 - `ecommerce-shop/README.md`
 - `ecommerce-ng/README.md`
 - `AI_PROGRESS.md`
+- `AI_PROGRESS/*.md`
 
 The two project-local `AGENTS.md` files already contain deeper project-specific guidance. This root file is for workspace routing and cross-project context.
 
@@ -145,8 +146,9 @@ Important frontend runtime flow already confirmed by source:
 
 - This workspace has multiple `AGENTS.md` files. Prefer the closest one to the code you are changing.
 - Do not assume root-level commands exist for build/test/run; none were observed for the whole workspace.
+- Documentation-only changes (`*.md`, `docs/**`, AI guidance/progress logs, design/roadmap files) do not require code build/test commands; verify by reading back the edited document instead.
 - Backend responses may be envelope-wrapped while frontend code sometimes needs explicit unwrapping; check both `ecommerce-shop/coreservice/src/main/java/com/ttl/core/handler/ResponseHandler.java` and `ecommerce-ng/src/app/core/models/auth.models.ts` before changing API contracts.
-- `AI_PROGRESS.md` exists at workspace root, and the backend baseline explicitly says to append progress entries there after backend code or doc changes.
+- `AI_PROGRESS.md` va `AI_PROGRESS/*.md` o workspace root la nhat ky tien trinh chuan. Them muc moi vao file ngay hien tai trong `AI_PROGRESS/`, va giu `AI_PROGRESS.md` lam muc luc/huong dan.
 - The frontend and backend each have their own AI/reference material; do not mix frontend conventions into backend modules or vice versa.
 
 ## Observed conventions worth knowing
@@ -173,6 +175,8 @@ Important frontend runtime flow already confirmed by source:
 4. If touching API integration, verify response-envelope behavior on both sides.
 5. If touching backend architecture or conventions, also read `ecommerce-shop/.ai/BASELINE.md` and related scoped docs.
 6. If touching frontend API/auth flows, also read `ecommerce-ng/AI/references/http-and-api.md`, `auth-flow.md`, and `conventions.md`.
+7. For progress logging, do not use legacy project-local `AI_PROGRESS.md` files; append to the current day file under root `AI_PROGRESS/` and keep `AI_PROGRESS.md` updated as the index.
+7. For progress logging, do not use legacy project-local `AI_PROGRESS.md` files; append to the current day file under root `AI_PROGRESS/` and keep `AI_PROGRESS.md` updated as the index.
 
 ## Files that save time early
 
