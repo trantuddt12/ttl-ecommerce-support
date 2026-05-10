@@ -1,2 +1,2 @@
 # ttl-ecommerce-support
-for ecommerce-shop,  ecommerce-ng
+for ecommerce-shop, ecommerce-ng

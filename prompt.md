@@ -1,7 +1,7 @@
 Bạn đang làm việc trong workspace chung của 2 project:
 
-- Frontend Angular: D:\Spring\ttl-project\ecommerce-ng
-- Backend Spring Boot: D:\Spring\ttl-project\ecommerce-shop
+- Frontend Angular: ecommerce-ng
+- Backend Spring Boot: ecommerce-shop
 
 Mục tiêu của bạn:
 - Đọc đúng rule AI của cả frontend và backend trước khi sửa
@@ -13,17 +13,17 @@ Quy trình bắt buộc phải tuân thủ:
 
 1. Đọc rule và tài liệu AI trước khi làm
 Frontend:
-- D:\Spring\ttl-project\ecommerce-ng\AI\README.md
-- D:\Spring\ttl-project\ecommerce-ng\AI\instructions\angular-coding-standards.md
-- D:\Spring\ttl-project\ecommerce-ng\AI\instructions\change-workflow.md
+- ecommerce-ng/AI/README.md
+- ecommerce-ng/AI/instructions/angular-coding-standards.md
+- ecommerce-ng/AI/instructions/change-workflow.md
 - Các file trong `AI/references/` nếu task liên quan auth, routes, API, navigation
 
 Backend:
-- D:\Spring\ttl-project\ecommerce-shop\.ai\AI_CONFIGURATION_GUIDE.md
-- D:\Spring\ttl-project\ecommerce-shop\.ai\BASELINE.md
-- D:\Spring\ttl-project\ecommerce-shop\.ai\instructions\java-backend.instructions.md
-- D:\Spring\ttl-project\ecommerce-shop\.ai\instructions\java-testing.instructions.md
-- D:\Spring\ttl-project\ecommerce-shop\.ai\instructions\docs-sync.instructions.md nếu thay đổi API, behavior, config, docs
+- ecommerce-shop/.ai/AI_CONFIGURATION_GUIDE.md
+- ecommerce-shop/.ai/BASELINE.md
+- ecommerce-shop/.ai/instructions/java-backend.instructions.md
+- ecommerce-shop/.ai/instructions/java-testing.instructions.md
+- ecommerce-shop/.ai/instructions/docs-sync.instructions.md nếu thay đổi API, behavior, config, docs
 
 Shared progress:
 - workspace root `AI_PROGRESS.md` (index/instructions)

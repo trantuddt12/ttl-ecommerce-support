@@ -9,7 +9,7 @@ Top-level projects observed:
 - `ecommerce-ng/`: Angular 17 standalone frontend with SSR.
 - `docs/`, `design.md`, `ROLE_PERMISSION.md`, `prompt.md`, and roadmap/progress files: supporting documentation.
 
-If your task is implementation work, choose the correct project first and run commands from that project root, not from `D:/Spring/ttl-project/`.
+If your task is implementation work, choose the correct project first and run commands from that project root, not from workspace root.
 
 ## First files to check
 
@@ -62,7 +62,7 @@ Additional AI guidance observed there:
 ## Essential commands by project
 
 ## `ecommerce-shop/` backend
-Run from `D:/Spring/ttl-project/ecommerce-shop`.
+Run from `ecommerce-shop/`.
 
 ### Build and test
 ```bash
@@ -95,7 +95,7 @@ java -jar scraper/target/scraper-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 ```
 
 ## `ecommerce-ng/` frontend
-Run from `D:/Spring/ttl-project/ecommerce-ng`.
+Run from `ecommerce-ng/`.
 
 ```bash
 npm install
