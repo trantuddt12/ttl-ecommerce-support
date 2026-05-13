@@ -1,0 +1,44 @@
+redis-cli :
+// docker exec -it <ten_container_redis> redis-cli
+
+docker exec -it redis redis-cli
+
+Sau khi vào:
+
+  PING
+  KEYS *
+  DBSIZE
+  TYPE ten_key
+  GET ten_key
+  HGETALL ten_key
+
+MySQL :
+Có 3 cách phổ biến:
+
+• Vào shell MySQL trong container:  docker exec -it <container_name> mysql -u root -p
+• Vào bash của container trước:  docker exec -it <container_name> sh  rồi chạy  mysql -u root -p
+• Kết nối từ máy host:  mysql -h 127.0.0.1 -P <mapped_port> -u root -p
+
+Lệnh hay dùng trong MySQL:
+
+  SHOW DATABASES;
+  USE ten_db;
+  SHOW TABLES;
+  SELECT * FROM ten_bang LIMIT 10;
+
+
+
+RedisInsight chạy trong Docker, nên  127.0.0.1  là chính container RedisInsight, không phải Redis.
+
+Nhập lại:
+
+  Host: redis
+  Port: 6379
+  Username: để trống hoặc default
+  Password: để trống
+
+Nếu vẫn lỗi, chạy Redis trước:
+
+  docker compose -f basecommerce/src/main/resources/docker-ecommerce/docker-compose.yml up -d redis redisinsight
+
+Sau đó vào RedisInsight test connection lại.

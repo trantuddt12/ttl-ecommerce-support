@@ -1,0 +1,41 @@
+run docker redis : docker compose -f docker-compose.yml up -d redis
+# Khoi dong Redis local cho cache, token va cac luong can Redis.
+
+stop docker redis : docker compose -f docker-compose.yml stop redis
+# Dung rieng container Redis ma khong ha toan bo stack Kafka.
+
+redis ping cmd : docker exec -it redis redis-cli ping
+# Kiem tra Redis co dang song hay khong, ket qua mong doi la PONG.
+
+redis set key cmd : docker exec -it redis redis-cli set sample:key "hello"
+# Tao mot key mau trong Redis.
+
+redis get key cmd : docker exec -it redis redis-cli get sample:key
+# Doc gia tri cua key vua luu.
+
+redis list keys cmd : docker exec -it redis redis-cli keys "*"
+# Liet ke tat ca key trong Redis local.
+
+redis delete key cmd : docker exec -it redis redis-cli del sample:key
+# Xoa mot key khoi Redis.
+
+redis select db cmd : docker exec -it redis redis-cli select 0
+# Chuyen sang database index mong muon, mac dinh thuong la 0.
+
+redis monitor cmd : docker exec -it redis redis-cli monitor
+# Theo doi real-time cac lenh dang chay trong Redis, dung de debug.
+
+run docker kafka stack : docker compose -f docker-compose.yml up -d
+# Khoi dong stack Kafka local o che do nen, gom Redis, Zookeeper, Kafka, Kafka UI, Prometheus, Grafana va kafka-exporter.
+
+stop docker kafka stack : docker compose -f docker-compose.yml down
+# Dung va go bo cac container trong stack Kafka local.
+
+run docker kafka debug shell : docker compose -f docker-compose.yml --profile debug run --rm kcat sh
+# Mo shell tam thoi trong container kcat de debug Kafka, list topic, consume hoac produce message.
+
+run docker es-kibana-docker : docker compose -f es-kibana-docker.yml up -d
+# Khoi dong Elasticsearch va Kibana cho local search/indexing.
+
+stop docker es-kibana-docker : docker compose -f es-kibana-docker.yml down
+# Dung stack Elasticsearch va Kibana local.
