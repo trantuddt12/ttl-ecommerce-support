@@ -44,3 +44,4 @@ Lich su chi tiet nam trong thu muc `AI_PROGRESS/` theo tung ngay.
 - `AI_PROGRESS/2026-05-07.md`
 - `AI_PROGRESS/2026-05-11.md`
 - `AI_PROGRESS/2026-05-12.md`
+- `AI_PROGRESS/2026-05-13.md`
