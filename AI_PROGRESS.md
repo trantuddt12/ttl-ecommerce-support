@@ -52,6 +52,15 @@ Lich su chi tiet nam trong thu muc `AI_PROGRESS/` theo tung ngay.
 
 ---
 
+### 2026-05-18 15:25 - ecommerce-shop - Async checkout saga command consumers
+
+- Scope: backend
+- Log: `AI_PROGRESS/2026-05-18.md`
+- Summary:
+  - Added `SagaCommandConsumer` and `SagaCommandHandlerService` so checkout saga command topics are consumed and reply topics are published for orchestrator progression.
+- Verification:
+  - `basecommerce` targeted test `SagaCommandHandlerServiceTest` passed with 3 tests.
+
 ### 2026-05-08 14:00 - ecommerce-shop - Payment module full implementation
 
 - Scope: backend
